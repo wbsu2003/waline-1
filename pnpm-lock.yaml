@@ -278,6 +278,34 @@ importers:
         specifier: 4.2.1
         version: 4.2.1(@types/node@18.15.11)(sass@1.60.0)
 
+  packages/client-presets:
+    dependencies:
+      markdown-it:
+        specifier: ^13.0.1
+        version: 13.0.1
+      marked:
+        specifier: ^4.3.0
+        version: 4.3.0
+    devDependencies:
+      '@types/marked':
+        specifier: 4.0.8
+        version: 4.0.8
+      '@types/node':
+        specifier: 18.15.11
+        version: 18.15.11
+      '@vitejs/plugin-vue':
+        specifier: 4.1.0
+        version: 4.1.0(vite@4.2.1)(vue@3.2.47)
+      recaptcha-v3:
+        specifier: 1.10.0
+        version: 1.10.0
+      user-agent-data-types:
+        specifier: 0.3.1
+        version: 0.3.1
+      vite:
+        specifier: 4.2.1
+        version: 4.2.1(@types/node@18.15.11)(sass@1.60.0)
+
   packages/cloudbase:
     dependencies:
       '@waline/vercel':
@@ -3960,7 +3988,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 18.15.11
     dev: true
 
   /@types/scheduler@0.16.3:
@@ -13423,7 +13451,6 @@ packages:
 
   /recaptcha-v3@1.10.0:
     resolution: {integrity: sha512-aGTxYSk3FFNKnXeKDbLpgRDRyIHRZNBF5HyaXXAN1Aj4TSyyZvmoAn9CylvpqLV3pYpIQavwc+2rzhNFn5SsLQ==}
-    dev: false
 
   /recast@0.21.5:
     resolution: {integrity: sha512-hjMmLaUXAm1hIuTqOdeYObMslq/q+Xff6QE3Y2P+uoHAg2nmVlLBps2hzh1UJDdMtDTMXOFewK6ky51JQIeECg==}

@@ -1,0 +1,65 @@
+{
+  "name": "@waline/client-presets",
+  "version": "0.1.0-alpha.0",
+  "description": "Presets for official Waline client",
+  "keywords": [
+    "waline",
+    "presets"
+  ],
+  "repository": {
+    "url": "https://github.com/walinejs/waline",
+    "directory": "packages/client-presets"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mr.Hope",
+    "email": "mister-hope@outlook.com",
+    "url": "https://mrhope.site"
+  },
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/index.js",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mts --configPlugin esbuild",
+    "clean": "rimraf ./dist",
+    "dev": "vite",
+    "prepublishOnly": "pnpm clean && pnpm build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "maintained node versions",
+      "not dead",
+      "not ie 11",
+      "not op_mini all",
+      "last 2 years"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "marked": "^4.3.0",
+    "markdown-it": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/marked": "4.0.8",
+    "@types/node": "18.15.11",
+    "@vitejs/plugin-vue": "4.1.0",
+    "recaptcha-v3": "1.10.0",
+    "user-agent-data-types": "0.3.1",
+    "vite": "4.2.1"
+  }
+}
