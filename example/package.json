@@ -4,5 +4,8 @@
   "private": true,
   "dependencies": {
     "@waline/vercel": "latest"
+  },
+  "engines": {
+    "node": ">=16.14"
   }
 }
